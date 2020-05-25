@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     private fun setListeners() {
         val clickableViews:List<View> =
             listOf(textViewBxOne,textViewBxTwo,textViewBxThree,
-                textViewBxFour,textViewBxFive,constrainedLayout)
+                textViewBxFour,textViewBxFive,constrainedLayout,buttonGreen,buttonRed,buttonYellow)
 
         for (item in clickableViews){
             item.setOnClickListener { makeColored(it) }
@@ -37,6 +38,11 @@ class MainActivity : AppCompatActivity() {
             R.id.textViewBxThree -> view.setBackgroundResource(android.R.color.holo_green_light)
             R.id.textViewBxFour -> view.setBackgroundResource(android.R.color.holo_green_dark)
             R.id.textViewBxFive -> view.setBackgroundResource(android.R.color.holo_green_light)
+
+            //boxes using custom colors for background
+            R.id.buttonRed ->textViewBxThree.setBackgroundResource(R.color.my_red)
+            R.id.buttonYellow -> textViewBxFour.setBackgroundResource(R.color.my_yellow)
+            R.id.buttonGreen -> textViewBxFive.setBackgroundResource(R.color.my_green)
 
             else -> view.setBackgroundColor(Color.LTGRAY)
         }

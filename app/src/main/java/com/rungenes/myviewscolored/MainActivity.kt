@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun makeColored(view: View) {
+
         when (view.id) {
 
             // Boxes using Color class colors for background
@@ -46,6 +47,13 @@ class MainActivity : AppCompatActivity() {
 
             else -> view.setBackgroundColor(Color.LTGRAY)
         }
+
+      when(view.id){
+          R.id.buttonRed ->buttonRed.setBackgroundResource(R.color.my_red)
+          R.id.buttonYellow -> buttonYellow.setBackgroundResource(R.color.my_yellow)
+          R.id.buttonGreen -> buttonGreen.setBackgroundResource(R.color.my_green)
+      }
+
 
     }
 }

@@ -10,4 +10,5 @@
     <string name="button_green">Green</string>
     <string name="how_to_play">How to Play</string>
     <string name="click_boxes">Tap Boxes and screen</string>
+    <string name="refresh">Refresh</string>
 </resources>

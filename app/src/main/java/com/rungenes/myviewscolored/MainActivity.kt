@@ -86,6 +86,7 @@ class MainActivity : AppCompatActivity() {
                 buttonRed.setBackgroundColor(ContextCompat.getColor(this,R.color.my_color))
                 buttonYellow.setBackgroundColor(ContextCompat.getColor(this,R.color.my_color))
                 buttonGreen.setBackgroundColor(ContextCompat.getColor(this,R.color.my_color))
+                constrainedLayout.setBackgroundColor(ContextCompat.getColor(this,R.color.my_color))
             true
 
             }
